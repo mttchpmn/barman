@@ -12,7 +12,7 @@ const style = {
 };
 
 const render = ({ output }) => {
-  return <div style={{ ...baseStyles, ...style }}>-- {output} --</div>;
+  return <div style={{ ...baseStyles, ...style }}>-- {output}</div>;
 };
 
 export { command, refreshFrequency, render };
