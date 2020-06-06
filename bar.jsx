@@ -1,5 +1,5 @@
 import { css } from "uebersicht";
-const { colors } = require("./theme.json");
+import { colors } from "./lib/theme";
 
 export const refreshFrequency = false;
 
