@@ -18,7 +18,7 @@ const style = {
 };
 
 const render = ({ output }) => (
-  <div style={{ ...baseStyles, ...style }}>♫ {output}</div>
+  <div style={{ ...baseStyles, ...style }}>{output ? `♫ ${output}` : null}</div>
 );
 
 export { command, refreshFrequency, render };
