@@ -3,7 +3,7 @@ import { fonts, colors } from "./theme.json";
 
 export const command = 'date +"%H:%M | %A %b %d"';
 
-export const refreshFrequency = 1000;
+export const refreshFrequency = 15000;
 
 const clock = css`
   color: ${colors.foreground};

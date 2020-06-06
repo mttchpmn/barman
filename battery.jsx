@@ -3,6 +3,8 @@ import { colors } from "./lib/theme";
 
 const command = "./barman/lib/battery.sh";
 
+const refreshFrequency = 60000;
+
 const style = {
   marginTop: "3px",
   right: "250px",
@@ -40,4 +42,4 @@ const render = ({ output }) => {
   );
 };
 
-export { command, render };
+export { command, refreshFrequency, render };
