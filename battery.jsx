@@ -3,7 +3,7 @@ import { colors } from "./lib/theme";
 
 const command = "./barman/lib/battery.sh";
 
-const refreshFrequency = 60000;
+const refreshFrequency = 1000;
 
 const style = {
   marginTop: "3px",
@@ -11,7 +11,7 @@ const style = {
 };
 
 const render = ({ output }) => {
-  let [percentage, remaining, charging] = output.split(" ");
+  let [percentage, charging, remaining] = output.trim().split(" ");
   percentage = parseInt(percentage, 10);
   charging = charging === "true";
   return (
@@ -35,7 +35,7 @@ const render = ({ output }) => {
                 : colors.red,
           }}
         >
-          {percentage}% | {remaining} left
+          {percentage}% | {remaining || "??"} left
         </span>
       )}
     </div>
