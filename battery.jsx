@@ -11,11 +11,12 @@ const containerStyle = {
   height: "20px",
   right: "175px",
   width: "70px",
+  display: "flex",
+  justifyContent: "center",
 };
 
 const style = {
   marginTop: "3px",
-  marginLeft: "10px",
 };
 
 const render = ({ output }) => {
