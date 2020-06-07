@@ -16,7 +16,7 @@ const containerStyle = {
 };
 
 const style = {
-  marginTop: "3px",
+  marginTop: "4px",
 };
 
 const render = ({ output }) => {

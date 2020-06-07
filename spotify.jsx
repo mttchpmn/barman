@@ -14,7 +14,7 @@ const refreshFrequency = 5000;
 
 const style = {
   marginTop: "3px",
-  left: "150px",
+  left: "270px",
 };
 
 const render = ({ output }) => (
