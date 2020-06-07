@@ -23,7 +23,7 @@ const icon = css`
   color: ${colors.background};
   background-color: ${colors.pink};
   height: 20px;
-  width: 25px;
+  width: 30px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   margin-left: 10px;
