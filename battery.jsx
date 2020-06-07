@@ -9,7 +9,7 @@ const containerStyle = {
   borderBottomLeftRadius: "3px",
   borderBottomRightRadius: "3px",
   height: "20px",
-  right: "200px",
+  right: "175px",
   width: "70px",
 };
 

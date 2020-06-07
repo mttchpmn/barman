@@ -21,7 +21,7 @@ const bar = css`
 
 const icon = css`
   color: ${colors.pink};
-  margin-left: 3px;
+  margin-left: 10px;
   margin-top: 1.5px;
 `;
 
