@@ -6,13 +6,19 @@ const command = `osascript -e 'tell application "System Events" to get title of 
 const refreshFrequency = 500;
 
 const style = {
-  left: "20px",
+  left: "50px",
   marginTop: "3px",
-  color: colors.pink,
+  // color: colors.pink,
 };
 
 const render = ({ output }) => {
-  return <div style={{ ...baseStyles, ...style }}>-- {output}</div>;
+  return (
+    <div>
+      <div style={{ ...baseStyles, ...style }}>
+        <i class="far fa-window-maximize"></i> {output}
+      </div>
+    </div>
+  );
 };
 
 export { command, refreshFrequency, render };

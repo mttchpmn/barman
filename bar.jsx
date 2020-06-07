@@ -19,8 +19,24 @@ const bar = css`
   z-index: -1;
 `;
 
+const icon = css`
+  color: ${colors.pink};
+  margin-left: 3px;
+  margin-top: 1.5px;
+`;
+
 export const render = () => (
   <div className={container}>
-    <div className={bar}></div>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <div className={bar}>
+      <div className={icon}>
+        <i class="fas fa-cocktail"></i>
+      </div>
+    </div>
   </div>
 );

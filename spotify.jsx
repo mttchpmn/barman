@@ -14,11 +14,17 @@ const refreshFrequency = 5000;
 
 const style = {
   marginTop: "3px",
-  left: "120px",
+  left: "150px",
 };
 
 const render = ({ output }) => (
-  <div style={{ ...baseStyles, ...style }}>{output ? `♫ ${output}` : null}</div>
+  <div style={{ ...baseStyles, ...style }}>
+    {output ? (
+      <div>
+        <i class="fab fa-spotify"></i> {output}
+      </div>
+    ) : null}
+  </div>
 );
 
 export { command, refreshFrequency, render };
