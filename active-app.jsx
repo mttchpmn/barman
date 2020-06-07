@@ -5,17 +5,27 @@ const command = `osascript -e 'tell application "System Events" to get title of 
 
 const refreshFrequency = 500;
 
-const style = {
+const containerStyle = {
   left: "50px",
+  height: "20px",
+  width: "200px",
+  marginTop: "-2px",
+  paddingLeft: "5px",
+  border: `1px solid ${colors.currentLine}`,
+  borderRadius: "3px",
+};
+
+const style = {
   marginTop: "3px",
-  // color: colors.pink,
 };
 
 const render = ({ output }) => {
   return (
     <div>
-      <div style={{ ...baseStyles, ...style }}>
-        <i class="far fa-window-maximize"></i> {output}
+      <div style={{ ...baseStyles, ...containerStyle }}>
+        <div style={style}>
+          <i class="far fa-window-maximize"></i> {output}
+        </div>
       </div>
     </div>
   );
